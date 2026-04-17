@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohd Hamd — AIML Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">MH<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact">Hire Me</a></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">CSE · AIML Specialization</div>
+      <h1 class="hero-name reveal-up">
+        <span class="line">Mohd</span>
+        <span class="line accent-line">Hamd<span class="dot accent">.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        AI/ML Engineer &amp; Full-Stack Developer building intelligent systems<br>
+        at <span class="highlight">Manav Rachna International Institute</span>
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-scroll reveal-up">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="rotating-text">
+        <svg viewBox="0 0 200 200" class="rot-svg">
+          <path id="circlePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="none"/>
+          <text>
+            <textPath href="#circlePath">AI · ML · PYTHON · JAVA · C++ · TABLEAU ·&nbsp;</textPath>
+          </text>
+        </svg>
+        <div class="rot-center">AI</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-left">— About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-heading">Turning data<br>into <span class="accent">intelligence</span></h2>
+          <p>I'm a Computer Science student specializing in Artificial Intelligence &amp; Machine Learning at Manav Rachna International Institute of Research and Studies. Passionate about building systems that think, learn, and adapt.</p>
+          <p>My approach blends rigorous algorithmic thinking with creative problem-solving — whether I'm training neural networks, crafting clean backend APIs, or visualizing complex datasets.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="10">0</span><span class="stat-plus accent">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal-right">
+          <div class="card-inner">
+            <div class="card-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-core">MH</div>
+            </div>
+            <div class="card-info">
+              <div class="info-row"><span class="info-label">Institute</span><span class="info-val">MRIIRS</span></div>
+              <div class="info-row"><span class="info-label">Major</span><span class="info-val">CSE (AIML)</span></div>
+              <div class="info-row"><span class="info-label">Focus</span><span class="info-val">AI / ML / Data</span></div>
+              <div class="info-row"><span class="info-label">Status</span><span class="info-val available">Available <span class="pulse"></span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">— Tech Stack</div>
+      <h2 class="section-heading center reveal-up">Skills &amp; <span class="accent">Tools</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-icon">⚙️</div>
+          <h3>C++</h3>
+          <p>Data structures, algorithms, competitive programming, and systems-level thinking.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="100">
+          <div class="skill-icon">☕</div>
+          <h3>Java</h3>
+          <p>OOP, design patterns, Spring Boot basics, and backend service development.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="200">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>ML pipelines, data analysis, NumPy, Pandas, Scikit-learn, TensorFlow &amp; PyTorch.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="300">
+          <div class="skill-icon">📊</div>
+          <h3>Tableau</h3>
+          <p>Interactive dashboards, data storytelling, KPI tracking, and business intelligence.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="400">
+          <div class="skill-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>Supervised/unsupervised learning, model evaluation, feature engineering &amp; tuning.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="500">
+          <div class="skill-icon">🧠</div>
+          <h3>Deep Learning</h3>
+          <p>CNNs, RNNs, transformers, neural architecture design, and model deployment.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="600">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL / Databases</h3>
+          <p>MySQL, PostgreSQL, query optimization, schema design, and data warehousing.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="700">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript — building clean, responsive frontends and REST APIs.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">— Portfolio</div>
+      <h2 class="section-heading center reveal-up">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" data-delay="0">
+          <div class="project-num accent">01</div>
+          <div class="project-tag">Machine Learning</div>
+          <h3>Sentiment Analysis Engine</h3>
+          <p>NLP pipeline using Python &amp; TensorFlow to classify text sentiment with 94% accuracy. Trained on 100K+ reviews with custom preprocessing.</p>
+          <div class="project-tech">
+            <span>Python</span><span>TensorFlow</span><span>NLP</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="150">
+          <div class="project-num accent">02</div>
+          <div class="project-tag">Data Visualization</div>
+          <h3>Sales Intelligence Dashboard</h3>
+          <p>Interactive Tableau dashboard tracking real-time KPIs, sales funnels, and regional performance for business decision-making.</p>
+          <div class="project-tech">
+            <span>Tableau</span><span>SQL</span><span>BI</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="300">
+          <div class="project-num accent">03</div>
+          <div class="project-tag">Deep Learning</div>
+          <h3>Image Classifier CNN</h3>
+          <p>Custom convolutional neural network built in PyTorch for multi-class image classification. Achieved 91% test accuracy on CIFAR-10.</p>
+          <div class="project-tech">
+            <span>Python</span><span>PyTorch</span><span>CNN</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="450">
+          <div class="project-num accent">04</div>
+          <div class="project-tag">Backend</div>
+          <h3>Student Management System</h3>
+          <p>Full CRUD Java application with Spring Boot backend, MySQL database, and RESTful APIs for academic record management.</p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="600">
+          <div class="project-num accent">05</div>
+          <div class="project-tag">Algorithms</div>
+          <h3>Path-finding Visualizer</h3>
+          <p>Interactive C++ simulation of Dijkstra's and A* algorithms with real-time graph traversal visualization on a custom grid engine.</p>
+          <div class="project-tech">
+            <span>C++</span><span>Algorithms</span><span>Graphs</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="750">
+          <div class="project-num accent">06</div>
+          <div class="project-tag">AI / NLP</div>
+          <h3>Chatbot with RAG</h3>
+          <p>Retrieval-Augmented Generation chatbot using Python, vector embeddings, and a custom knowledge base for domain-specific Q&amp;A.</p>
+          <div class="project-tech">
+            <span>Python</span><span>LangChain</span><span>RAG</span>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">— Get In Touch</div>
+      <h2 class="section-heading center reveal-up">Let's <span class="accent">Connect</span></h2>
+      <p class="contact-sub reveal-up">Open to internships, collaborations, and exciting AI/ML projects.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">mohdhamd@mriirs.edu.in</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Faridabad, Haryana, India</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🎓</div>
+            <div>
+              <span class="contact-label">Institute</span>
+              <span class="contact-val">MRIIRS</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">GitHub</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+            <a href="#" class="social-btn">LeetCode</a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-input form-textarea" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message 🚀</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">MH<span class="accent">.</span></div>
+        <p class="footer-text">Designed &amp; built by <span class="accent">Mohd Hamd</span> · 2025</p>
+        <p class="footer-sub">CSE (AIML) · MRIIRS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
